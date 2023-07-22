@@ -154,26 +154,6 @@ body {
   cursor: pointer;
 }
 
-.circle {
-  margin-top: 15px;
-  margin-left: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: red;
-  border-radius: 50%;
-  animation: alternate infinite moveCircle 1s;
-}
-
-@keyframes moveCircle {
-  0% {
-    transform: translateX(0);
-    background-color: white;
-  }
-  100% {
-    transform: translateX(100%) translateY(100%);
-    background-color: red;
-  }
-}
 .fondo-animado {
   position: absolute;
   width: 100%;
