@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto Serif", serif;
+}
+
+.menu {
+  list-style: none;
+  background-color: #c4bfbf;
+  text-align: right;
+}
+.menu li {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+}
+.menu li a:hover {
+  background: black;
+  color: white;
+}
+.menu li a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  display: block;
+}
+
+.barra-inferior {
+  background-color: black;
+  width: 100vw;
+  height: 93px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+}
+.redes-sociales ul {
+  margin: 0px 150px 0px 150px;
+}
+.redes-sociales ul li {
+  width: 500;
+  display: inline-block;
+  padding: 20px;
+  margin: 0px 50px 0px 50px;
+}
+.redes-sociales ul li img {
+  border-radius: 20px;
+}
+
+#WT-WD {
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  text-align: center;
+  /*display: inline;*/
+  padding: 10px;
+  width: 40%;
+  border-radius: 30px;
+  margin: 40px 200px 10px 150px;
+  animation-name: animaTitle;
+  animation-duration: 3s;
+}
+
+@keyframes animaTitle {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+.info {
+  align-items: center;
+  text-align: center;
+}
+
+.texts li a {
+  color: black;
+  text-decoration: none;
+}
+
+.projects ul li img {
+  border-radius: 10%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 90%;
+  font-size: 30px;
+}
+
+.descripcion {
+  margin: 40px 100px 90px 40px;
+  font-weight: 700;
+  animation-name: animaText;
+  animation-duration: 3s;
+}
+
+@keyframes animaText {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: none;
+  }
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.project img {
+  border-radius: 20px;
+}
+.project a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  outline: 2px solid black;
+  outline-offset: 3px;
+  padding: 12px;
+  width: 120px;
+  border-radius: 30px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-button {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  background-color: blue;
+  outline: 2px solid blue;
+  outline-offset: 3px;
+  margin: 10px;
+  padding: 12px;
+  width: 120px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.circle {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  animation: alternate infinite moveCircle 1s;
+}
+
+@keyframes moveCircle {
+  0% {
+    transform: translateX(0);
+    background-color: white;
+  }
+  100% {
+    transform: translateX(100%) translateY(100%);
+    background-color: red;
+  }
+}
+.fondo-animado {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+span.uno,
+span.dos,
+span.tres,
+span.cuatro {
+  border: 0;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(246, 246, 246);
+  animation: vuelta 7s linear infinite normal both;
+}
+
+span.uno {
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  background-color: rgb(255, 0, 0);
+}
+
+span.dos {
+  width: 70px;
+  height: 70px;
+  bottom: -70px;
+  background-color: rgb(242, 111, 111);
+}
+
+span.tres {
+  width: 50px;
+  height: 50px;
+  bottom: -50px;
+  background-color: rgba(243, 160, 160, 0.707);
+}
+
+span.cuatro {
+  width: 20px;
+  height: 20px;
+  bottom: -20px;
+  background-color: rgb(227, 100, 100);
+}
+
+@keyframes vuelta {
+  from {
+    transform: translate(0deg);
+    bottom: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    bottom: calc(100% + 100px);
+  }
+}
+.fondo-animado span:nth-child(1) {
+  left: 5%;
+}
+
+.fondo-animado span:nth-child(2) {
+  left: 50%;
+}
+
+.fondo-animado span:nth-child(3) {
+  left: 35%;
+}
+
+.fondo-animado span:nth-child(4) {
+  left: 75%;
+}
+
+.fondo-animado span:nth-child(5) {
+  left: 25%;
+}
+
+.fondo-animado span:nth-child(6) {
+  left: 85%;
+}
+
+.fondo-animado span:nth-child(7) {
+  left: 90%;
+}
+
+.fondo-animado span:nth-child(8) {
+  left: 65%;
+}
+
+.fondo-animado span:nth-child(9) {
+  left: 60%;
+}
+
+.fondo-animado span:nth-child(10) {
+  left: 75%;
+}
+
+.fondo-animado span:nth-child(11) {
+  left: 10%;
+}
+
+.fondo-animado span:nth-child(12) {
+  left: 35%;
+}
+
+span.delay-1 {
+  animation-delay: 1s;
+}
+
+span.delay-2 {
+  animation-delay: 2s;
+}
+
+span.delay-3 {
+  animation-delay: 3s;
+}
+
+span.delay-4 {
+  animation-delay: 4s;
+}
+
+span.delay-1 {
+  animation-delay: 5s;
+}
+
+span.delay-1 {
+  animation-delay: 6s;
+}/*# sourceMappingURL=styles.css.map */
